@@ -447,23 +447,54 @@ h3 {
     padding: 20px;
   }
 
-  .compare-table {
-    border-radius: 18px;
-  }
+.compare-table {
+  border: 0;
+  background: transparent;
+  display: grid;
+  gap: 16px;
+}
 
-  .compare-table > div {
-    grid-template-columns: 1fr;
-  }
+.compare-table > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.045);
+  overflow: hidden;
+}
 
-  .compare-table div[role="cell"],
-  .compare-table div[role="columnheader"] {
-    padding: 15px;
-  }
+.compare-table .table-head {
+  display: none;
+}
 
-  .compare-table div[role="cell"] + div[role="cell"],
-  .compare-table div[role="columnheader"] + div[role="columnheader"] {
-    border-top: 1px solid var(--line);
-  }
+.compare-table div[role="cell"] {
+  padding: 14px 16px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.compare-table div[role="cell"]:first-child {
+  border-top: 0;
+  color: var(--orange-bright);
+  font-weight: 800;
+  background: rgba(249, 115, 22, 0.08);
+}
+
+.compare-table div[role="cell"]:nth-child(2)::before {
+  content: "Legacy CCMS: ";
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.compare-table div[role="cell"]:nth-child(3)::before {
+  content: "ForgeDITA: ";
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+  font-weight: 800;
+}
 
   .cta-section {
     margin-bottom: 56px;
