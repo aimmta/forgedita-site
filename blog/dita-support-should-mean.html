@@ -1,111 +1,61 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>What DITA Support Should Mean | ForgeDITA</title>
-  <meta name="description"
-    content="DITA support should mean native XML preservation, specialization-aware processing, graph-aware resolution, public conformance claims, and clean export.">
+  <meta name="description" content="DITA support should mean native XML preservation, specialization-aware processing, graph-aware resolution, public conformance claims, and clean export.">
   <meta name="theme-color" content="#f97316">
-  <meta property="og:title" content="ForgeDITA | What DITA Support Should Actually Mean">
-  <meta property="og:description"
-    content="DITA support should mean native XML preservation, specialization-aware processing, graph-aware resolution, public conformance claims, and clean export.">
+  <meta property="og:title" content="What DITA Support Should Mean | ForgeDITA">
+  <meta property="og:description" content="DITA support should mean native XML preservation, specialization-aware processing, graph-aware resolution, public conformance claims, and clean export.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://forgedita.com/assets/forgedita-logo-concept.png">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-
 <body>
   <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="ForgeDITA home"><span class="brand-mark">F</span><span
-        class="brand-name">Forge<span>DITA</span></span></a>
+    <a class="brand" href="../index.html" aria-label="ForgeDITA home">
+      <span class="brand-mark">F</span>
+      <span class="brand-name">Forge<span>DITA</span></span>
+    </a>
     <nav aria-label="Main navigation">
       <a href="../index.html">Home</a>
       <a href="../blog/index.html">Blog</a>
       <a class="nav-cta" href="mailto:hello@forgedita.com?subject=ForgeDITA%20Beta%20Request">Join Beta</a>
     </nav>
   </header>
-  <section class="section-shell"><div class="section-heading"><p class="eyebrow">Industry reality</p><h2>Many DITA teams are exhausted by years of operational compromise.</h2><p class="section-intro">ForgeDITA exists for organizations that want cleaner architecture, predictable publishing, native XML preservation, and infrastructure that becomes more maintainable over time instead of less.</p></div></section><main id="top">
+  <main id="top">
     <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">Standards-first</p>
-        <h1>What DITA Support Should Actually Mean</h1>
-        <p class="hero-text">
-          A practical look at modern DITA architecture, workflows, and platform design.
-        </p>
-        <p class="hero-text">DITA support should mean native XML preservation, specialization-aware processing,
-          graph-aware resolution, public conformance claims, and clean export.</p>
-      </div>
-      <div class="hero-card"><img src="../assets/forgedita-logo-concept.png"
-          alt="ForgeDITA forge-inspired logo concept"></div>
+      <div class="hero-copy"><p class="eyebrow">Standards-first</p><h1>What DITA support should actually mean.</h1><p class="hero-text">Support for DITA should not mean just importing XML, running a transform, or surviving a demo. For teams living with structured content every day, DITA support has to be precise, testable, and operationally useful.</p></div>
+      <div class="hero-card"><img src="../assets/forgedita-logo-concept.png" alt="ForgeDITA forge-inspired logo concept"></div>
     </section>
-    <section class="dark-band">
-      <div class="section-shell manifesto">
-        <p>“Supports DITA” can mean almost anything if nobody asks follow-up questions. It might mean import. It might
-          mean publish. It might mean the product understands enough XML to survive a demo.</p>
-        <p>That is not good enough for teams running real structured content operations. DITA support should be bounded,
-          test-backed, and specific.</p>
-        <p>ForgeDITA’s position is simple: never claim more than the product can prove. That may sound less flashy, but
-          it is the only sane way to build trust.</p>
-      </div>
-    </section>
-    <section class="section-shell split-section">
-      <div>
-        <p class="eyebrow">Practical take</p>
-        <h2>What this means in the real world.</h2>
-      </div>
-      <div class="feature-grid">
-        <article>
-          <h3>Preserve the source</h3>
-          <p>DITA topics, maps, subject schemes, DITAVAL files, catalogs, and assets should remain clean and exportable.
-          </p>
-        </article>
-        <article>
-          <h3>Understand the graph</h3>
-          <p>Keys, conrefs, xrefs, maps, subject schemes, and impact analysis are not side quests. They are the CCMS
-            core.</p>
-        </article>
-        <article>
-          <h3>Respect specialization</h3>
-          <p>A DITA system that only understands base element names is not ready for serious specialized content.</p>
-        </article>
-        <article>
-          <h3>Publish the claim</h3>
-          <p>A public conformance statement beats a vague compliance slogan every time.</p>
-        </article>
-      </div>
-    </section>
+
+    <section class="dark-band"><div class="section-shell manifesto">        <p>Many systems are DITA-adjacent. They may store XML or publish familiar outputs, but still hide semantics, constrain export, or leave specialization behavior scattered across custom code and tribal knowledge.</p>
+        <p>That is not enough for serious DITA teams. If a platform claims DITA support, it should preserve native XML, understand references and reuse, respect specialization, expose diagnostics, and make conformance claims that can be tested.</p>
+        <p>ForgeDITA takes the conservative path: claim only what can be proven, keep content portable, and make the semantic model explicit instead of burying it inside editor plugins or publishing scripts.</p></div></section>
+
+    <section class="section-shell split-section"><div><p class="eyebrow">Practical take</p><h2>What this means in real DITA operations.</h2></div><div class="feature-grid">        <article><h3>Preserve the source</h3><p>Native XML should remain the system of record, not an intermediate format.</p></article>
+        <article><h3>Understand the graph</h3><p>Keys, conrefs, xrefs, maps, subject schemes, and impact analysis belong at the CCMS core.</p></article>
+        <article><h3>Respect specialization</h3><p>A DITA platform that only understands base element names is not ready for serious specialized content.</p></article>
+        <article><h3>Publish the claim</h3><p>A public conformance statement beats vague compliance language every time.</p></article></div></section>
+
     <section class="section-shell related-section">
-      <p class="eyebrow">Keep reading</p>
-      <h2>More from ForgeDITA</h2>
-      <div class="feature-grid">
-        <article>
-          <h3><a href="modern-dita-ccms-2026.html">Modern DITA CCMS (2026)</a></h3>
-        </article>
-        <article>
-          <h3><a href="dita-support-should-mean.html">What DITA Support Should Mean</a></h3>
-        </article>
-        <article>
-          <h3><a href="oxygen-users-deserve-better.html">Oxygen Users Deserve Better</a></h3>
-        </article>
-      </div>
-    </section>
-    <section class="section-shell cta-section">
-      <p class="eyebrow">Early access</p>
-      <h2>Building the cleaner path.</h2>
-      <p>ForgeDITA is moving toward MVP for teams that want native XML, Oxygen-first workflows, reproducible publishing,
-        and fewer platform headaches.</p><a class="button primary"
-        href="mailto:hello@forgedita.com?subject=ForgeDITA%20%7C%20What%20DITA%20Support%20Should%20Actually%20Mean">Talk
-        to ForgeDITA</a>
-    </section>
+  <p class="eyebrow">Keep reading</p>
+  <h2>More from ForgeDITA</h2>
+  <div class="feature-grid">
+    <article><h3><a href="modern-dita-ccms-2026.html">What a Modern DITA CCMS Should Look Like</a></h3></article>
+    <article><h3><a href="dita-support-should-mean.html">What DITA Support Should Mean</a></h3></article>
+    <article><h3><a href="oxygen-users-deserve-better.html">Oxygen Users Deserve Better</a></h3></article>
+  </div>
+</section>
+
+    <section class="section-shell cta-section"><p class="eyebrow">Early access</p><h2>Building the cleaner path.</h2><p>ForgeDITA is moving toward MVP for teams that want native XML, Oxygen-first workflows, reproducible publishing, and fewer systems that punish the people who understand them best.</p><a class="button primary" href="mailto:hello@forgedita.com?subject=ForgeDITA%20Beta%20Request">Talk to ForgeDITA</a></section>
   </main>
   <footer class="site-footer">
-    <p>© <span id="year"></span> ForgeDITA. Structured content, forged right.</p>
-    <p><a href="mailto:hello@forgedita.com">hello@forgedita.com</a></p>
+    <p>&copy; <span id="year"></span> ForgeDITA. Structured content, forged right.</p>
+    <p><a href="../blog/index.html">Blog</a> | <a href="mailto:hello@forgedita.com">hello@forgedita.com</a></p>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>

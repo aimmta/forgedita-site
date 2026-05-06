@@ -1,112 +1,61 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modern DITA CCMS (2026) | ForgeDITA</title>
-  <meta name="description"
-    content="A standards-first DITA infrastructure should protect native XML, support Oxygen-first authoring, pin publishing toolchains, expose open APIs, and avoid legacy platform bloat.">
+  <title>What a Modern DITA CCMS Should Look Like | ForgeDITA</title>
+  <meta name="description" content="A modern DITA CCMS should preserve native XML, support Oxygen-first authoring, pin publishing toolchains, expose open APIs, and reduce operational compromise.">
   <meta name="theme-color" content="#f97316">
-  <meta property="og:title" content="ForgeDITA | What a Modern DITA CCMS Should Look Like in 2026">
-  <meta property="og:description"
-    content="A standards-first DITA infrastructure should protect native XML, support Oxygen-first authoring, pin publishing toolchains, expose open APIs, and avoid legacy platform bloat.">
+  <meta property="og:title" content="What a Modern DITA CCMS Should Look Like | ForgeDITA">
+  <meta property="og:description" content="A modern DITA CCMS should preserve native XML, support Oxygen-first authoring, pin publishing toolchains, expose open APIs, and reduce operational compromise.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://forgedita.com/assets/forgedita-logo-concept.png">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-
 <body>
   <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="ForgeDITA home"><span class="brand-mark">F</span><span
-        class="brand-name">Forge<span>DITA</span></span></a>
+    <a class="brand" href="../index.html" aria-label="ForgeDITA home">
+      <span class="brand-mark">F</span>
+      <span class="brand-name">Forge<span>DITA</span></span>
+    </a>
     <nav aria-label="Main navigation">
       <a href="../index.html">Home</a>
       <a href="../blog/index.html">Blog</a>
       <a class="nav-cta" href="mailto:hello@forgedita.com?subject=ForgeDITA%20Beta%20Request">Join Beta</a>
     </nav>
   </header>
-  <section class="section-shell"><div class="section-heading"><p class="eyebrow">Industry reality</p><h2>Many DITA teams are exhausted by years of operational compromise.</h2><p class="section-intro">ForgeDITA exists for organizations that want cleaner architecture, predictable publishing, native XML preservation, and infrastructure that becomes more maintainable over time instead of less.</p></div></section><main id="top">
+  <main id="top">
     <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">Modern DITA CCMS</p>
-        <h1>What a standards-first DITA infrastructure should look like in 2026.</h1>
-        <p class="hero-text">
-          A practical look at modern DITA architecture, workflows, and platform design.
-        </p>
-        <p class="hero-text">A standards-first DITA infrastructure should protect native XML, support Oxygen-first authoring, pin
-          publishing toolchains, expose open APIs, and avoid legacy platform bloat.</p>
-      </div>
-      <div class="hero-card"><img src="../assets/forgedita-logo-concept.png"
-          alt="ForgeDITA forge-inspired logo concept"></div>
+      <div class="hero-copy"><p class="eyebrow">Modern DITA architecture</p><h1>What a modern DITA CCMS should look like.</h1><p class="hero-text">The CCMS market has given many teams a familiar bargain: accept platform heaviness, hidden assumptions, and process drag in exchange for governance. ForgeDITA starts from the belief that governance and maintainability should reinforce each other.</p></div>
+      <div class="hero-card"><img src="../assets/forgedita-logo-concept.png" alt="ForgeDITA forge-inspired logo concept"></div>
     </section>
-    <section class="dark-band">
-      <div class="section-shell manifesto">
-        <p>Most CCMS platforms were shaped by years of enterprise compromise. Layers were added. Workflows hardened.
-          Admin screens multiplied. Eventually the software started serving itself as much as the people using it.</p>
-        <p>A standards-first DITA infrastructure should start with a simpler promise: keep DITA as DITA, make the important operations
-          explicit, and do not trap the team inside a platform-shaped maze.</p>
-        <p>The hard parts are not button colors or dashboards. The hard parts are graph resolution, validation,
-          baselines, publishing reproducibility, clean export, and editor freedom.</p>
-      </div>
-    </section>
-    <section class="section-shell split-section">
-      <div>
-        <p class="eyebrow">Practical take</p>
-        <h2>What this means in the real world.</h2>
-      </div>
-      <div class="feature-grid">
-        <article>
-          <h3>Native XML is non-negotiable</h3>
-          <p>The repository should preserve DITA/XML as the source of truth, not translate it into a proprietary model
-            and hope nobody notices.</p>
-        </article>
-        <article>
-          <h3>Publishing must be reproducible</h3>
-          <p>A release should pin content, baseline, toolchain bundle, and publishing profile. Anything else is vibes
-            with a PDF button.</p>
-        </article>
-        <article>
-          <h3>Editors should be clients</h3>
-          <p>Oxygen, VS Code, and other tools should talk to open APIs. The editor is not the moat. The operating model
-            is.</p>
-        </article>
-        <article>
-          <h3>Conformance should be public</h3>
-          <p>If a product claims DITA support, it should say exactly what is supported and what is not.</p>
-        </article>
-      </div>
-    </section>
+
+    <section class="dark-band"><div class="section-shell manifesto">        <p>A modern DITA CCMS should not make experienced practitioners feel like they are only moving changes through a machine. It should preserve content, clarify workflow, and make publishing behavior easier to explain over time.</p>
+        <p>That means native XML as the system of record, open APIs for integration, versioned toolchain bundles, explicit semantic interpretation, and release evidence that can survive audits without turning every update into a manual chase.</p>
+        <p>This is not a rejection of structure or regulation. Regulated teams need control. The problem is when control is implemented as scattered spreadsheets, unclear runtime state, and systems nobody is allowed to improve.</p></div></section>
+
+    <section class="section-shell split-section"><div><p class="eyebrow">Practical take</p><h2>What this means in real DITA operations.</h2></div><div class="feature-grid">        <article><h3>Preserve the source</h3><p>DITA topics, maps, subject schemes, DITAVAL files, catalogs, and assets should remain clean and exportable.</p></article>
+        <article><h3>Pin the runtime</h3><p>A release should identify the exact baseline, toolchain bundle, publishing profile, and semantic model used to produce it.</p></article>
+        <article><h3>Expose the seams</h3><p>Repository, validation, graph, workflow, preview, publish, and baseline behavior should be available through open APIs.</p></article>
+        <article><h3>Respect practitioners</h3><p>The system should support responsible experts who need to improve templates, transforms, semantics, and workflows.</p></article></div></section>
+
     <section class="section-shell related-section">
-      <p class="eyebrow">Keep reading</p>
-      <h2>More from ForgeDITA</h2>
-      <div class="feature-grid">
-        <article>
-          <h3><a href="modern-dita-ccms-2026.html">Modern DITA CCMS (2026)</a></h3>
-        </article>
-        <article>
-          <h3><a href="dita-support-should-mean.html">What DITA Support Should Mean</a></h3>
-        </article>
-        <article>
-          <h3><a href="oxygen-users-deserve-better.html">Oxygen Users Deserve Better</a></h3>
-        </article>
-      </div>
-    </section>
-    <section class="section-shell cta-section">
-      <p class="eyebrow">Early access</p>
-      <h2>Building the cleaner path.</h2>
-      <p>ForgeDITA is moving toward MVP for teams that want native XML, Oxygen-first workflows, reproducible publishing,
-        and fewer platform headaches.</p><a class="button primary"
-        href="mailto:hello@forgedita.com?subject=ForgeDITA%20%7C%20What%20a%20Modern%20DITA%20CCMS%20Should%20Look%20Like%20in%202026">Talk
-        to ForgeDITA</a>
-    </section>
+  <p class="eyebrow">Keep reading</p>
+  <h2>More from ForgeDITA</h2>
+  <div class="feature-grid">
+    <article><h3><a href="modern-dita-ccms-2026.html">What a Modern DITA CCMS Should Look Like</a></h3></article>
+    <article><h3><a href="dita-support-should-mean.html">What DITA Support Should Mean</a></h3></article>
+    <article><h3><a href="oxygen-users-deserve-better.html">Oxygen Users Deserve Better</a></h3></article>
+  </div>
+</section>
+
+    <section class="section-shell cta-section"><p class="eyebrow">Early access</p><h2>Building the cleaner path.</h2><p>ForgeDITA is moving toward MVP for teams that want native XML, Oxygen-first workflows, reproducible publishing, and fewer systems that punish the people who understand them best.</p><a class="button primary" href="mailto:hello@forgedita.com?subject=ForgeDITA%20Beta%20Request">Talk to ForgeDITA</a></section>
   </main>
   <footer class="site-footer">
-    <p>© <span id="year"></span> ForgeDITA. Structured content, forged right.</p>
-    <p><a href="mailto:hello@forgedita.com">hello@forgedita.com</a></p>
+    <p>&copy; <span id="year"></span> ForgeDITA. Structured content, forged right.</p>
+    <p><a href="../blog/index.html">Blog</a> | <a href="mailto:hello@forgedita.com">hello@forgedita.com</a></p>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>
