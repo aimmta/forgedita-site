@@ -144,15 +144,14 @@ nav a:hover {
   width: 100%;
   min-height: min(620px, calc(100svh - 136px));
   padding: 74px max(16px, calc((100% - 1120px) / 2)) 86px;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 420px);
+  gap: clamp(32px, 6vw, 72px);
   align-items: center;
   position: relative;
   overflow: hidden;
   color: var(--fd-paper-50);
-  background:
-    linear-gradient(90deg, rgba(8, 12, 22, 0.96) 0%, rgba(8, 12, 22, 0.88) 39%, rgba(8, 12, 22, 0.38) 72%, rgba(8, 12, 22, 0.12) 100%),
-    url("assets/bannerCompany.png") center / cover no-repeat,
-    var(--fd-ink-950);
+  background: linear-gradient(135deg, rgba(8, 12, 22, 0.98), rgba(15, 23, 42, 0.94)), var(--fd-ink-950);
   border-top: 1px solid rgba(203, 213, 225, 0.2);
   border-bottom: 1px solid rgba(203, 213, 225, 0.2);
 }
@@ -168,7 +167,19 @@ nav a:hover {
 }
 
 .hero-card {
-  display: none;
+  width: min(100%, 420px);
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 22px 56px rgba(0, 0, 0, 0.28);
 }
 
 .eyebrow {
@@ -393,10 +404,7 @@ h3 {
   margin: 0;
   padding: 84px max(16px, calc((100% - 1120px) / 2));
   color: var(--fd-paper-50);
-  background:
-    linear-gradient(90deg, rgba(8, 12, 22, 0.98), rgba(8, 12, 22, 0.92)),
-    url("assets/bannerCompany.png") center / cover no-repeat,
-    var(--fd-ink-950);
+  background: linear-gradient(135deg, rgba(8, 12, 22, 0.98), rgba(15, 23, 42, 0.94)), var(--fd-ink-950);
   border-top: 1px solid rgba(203, 213, 225, 0.18);
 }
 
@@ -453,10 +461,12 @@ h3 {
     min-height: auto;
     padding-top: 64px;
     padding-bottom: 72px;
-    background:
-      linear-gradient(90deg, rgba(8, 12, 22, 0.97), rgba(8, 12, 22, 0.86)),
-      url("assets/bannerCompany.png") center / cover no-repeat,
-      var(--fd-ink-950);
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    justify-self: start;
+    width: min(100%, 340px);
   }
 
   h1 {
