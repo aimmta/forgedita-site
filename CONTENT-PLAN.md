@@ -1,6 +1,6 @@
 # ForgeDITA Blog Content Plan
 
-The repository includes 24 complete articles in `content/blog/`. Six are published on the site and 18 are held as ready-to-review drafts.
+The repository includes 24 complete articles in `content/blog/`. Seven are published on the site and 17 are held as ready-to-review drafts.
 
 ## Published
 
@@ -9,7 +9,8 @@ The repository includes 24 complete articles in `content/blog/`. Six are publish
 - Portability Is a Product Feature, Not an Exit Strategy
 - A CCMS Is a Dependency Graph, Not a Folder Tree
 - Immutable Toolchain Bundles Make Publishing Reproducible
-- Six Questions to Ask During a CCMS Demonstration
+- Seven Questions to Ask During a CCMS Demonstration
+- What a Serious CCMS Proof of Concept Should Test
 
 ## Draft series
 

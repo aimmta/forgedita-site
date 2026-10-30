@@ -24,7 +24,7 @@ Then open `http://localhost:8000`.
 
 ## Publishing an article
 
-The first six articles in `content/blog/` are published as HTML in `blog/`. The remaining 18 are complete drafts. To publish one:
+Seven articles in `content/blog/` are published as HTML in `blog/`. The remaining 17 are complete drafts. To publish one:
 
 1. Review its Markdown source and change `status: draft` to `status: published`.
 2. Add the publication date.
